@@ -17,7 +17,13 @@ class User(AbstractUser):
         default=USER
     )
 
-    avatar = models.URLField(blank=True, null=True)
+    avatar = models.ImageField(upload_to='avatars/', blank=True, null=True)
+
+    @property
+    def avatar_url(self):
+        if self.avatar:
+            return self.avatar.url
+        return None
 
     def __str__(self):
         return self.username
@@ -37,7 +43,14 @@ class Session(models.Model):
         decimal_places=2,
         default=0
     )
+    image = models.ImageField(upload_to='', blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
+
+    @property
+    def image_url(self):
+        if self.image:
+            return self.image.url
+        return None
 
     def __str__(self):
         return self.title

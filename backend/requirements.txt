@@ -1,4 +1,12 @@
 Django>=4.2
 djangorestframework
+djangorestframework-simplejwt
+dj-rest-auth
+django-allauth
+requests
+cryptography
 psycopg2-binary
 python-dotenv
+django-storages
+boto3
+Pillow
