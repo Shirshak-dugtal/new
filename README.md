@@ -5,7 +5,6 @@ A full-stack application for creating and booking online sessions. Built with Dj
 ## 🎥 Demo Video
 
 <!-- Replace VIDEO_ID_HERE with your actual YouTube video ID -->
-[![Watch the Demo]
 https://github.com/user-attachments/assets/2bf4fb4a-bb7f-4fd6-8165-a4bbe17d2a46
 
 
